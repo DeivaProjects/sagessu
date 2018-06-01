@@ -1,11 +1,13 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { SageSSU } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { SchedulePage } from '../pages/schedule/schedule';
+import { ClassPage } from '../pages/class/class';
+import { FinalPage } from '../pages/final/final';
+import { DiningPage } from '../pages/dining/dining';
+import { EventsPage } from '../pages/events/events';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -13,22 +15,26 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    SageSSU,
+    SchedulePage,
+    ClassPage,
+    FinalPage,
+    DiningPage,
+    EventsPage,
     TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(SageSSU)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    SageSSU,
+    SchedulePage,
+    ClassPage,
+    FinalPage,
+    DiningPage,
+    EventsPage,
     TabsPage
   ],
   providers: [
@@ -37,4 +43,4 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class SageSSUModule {}
